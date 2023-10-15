@@ -1,0 +1,7 @@
+{
+  "name": "PC-Website",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
