@@ -1,0 +1,10 @@
+@media (max-width: 675px) {
+  .nav1 {
+    display: none;
+  }
+}
+@media (min-width: 675px) {
+  .menu-nav {
+    display: none;
+  }
+}
