@@ -1,3 +1,22 @@
+.section1 {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: #171e35;
+}
+
+.section1 div {
+  transform: translate(1.5em, -1.5em);
+  color: white;
+  letter-spacing: 0.2em;
+  width: 80%;
+  font-size: large;
+}
+.section3 div {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
 @media (max-width: 675px) {
   .nav1 {
     display: none;
@@ -7,4 +26,72 @@
   .menu-nav {
     display: none;
   }
+  .section1 div {
+    transform: translate(5em, -1.5em);
+    color: white;
+    letter-spacing: 0.2em;
+    width: 40%;
+  }
+  .section3 div {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+
+.section1 div h1 {
+  font-size: xxx-large;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.section2 {
+  background-color: #a5f0d3;
+  width: 100vw;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: wrap;
+}
+.section2 div {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 60vw;
+  letter-spacing: 0.15em;
+  font-size: large;
+}
+
+.section3 {
+  background-color: #171e35;
+}
+
+.section3 div {
+  padding-top: 2em;
+  background-color: #171e35;
+}
+.section3 div h2 {
+  padding-left: 1.5em;
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #040816;
+  color: white;
+  font-size: medium;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.footer ion-grid ion-row ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+ion-icon {
+  font-size: 2em;
 }
