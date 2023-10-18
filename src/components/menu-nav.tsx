@@ -1,16 +1,18 @@
-import { IonButton, IonImg, IonItem, IonMenuToggle } from "@ionic/react";
+import { IonIcon, IonImg, IonItem, IonMenuToggle } from "@ionic/react";
 import "./menu-nav.css";
+import { logoWebComponent, menu } from "ionicons/icons";
 
 const Menu_Nav: React.FC = () => {
   return (
     <>
       <nav className="nav">
         <IonItem routerLink="/home">
-          <IonImg src="../../public/icon.svg" style={{ width: "3em" }}></IonImg>
+          <IonIcon icon={logoWebComponent} color="light" size="large"></IonIcon>
         </IonItem>
         <IonItem>
           <IonMenuToggle>
-            <IonImg src="../../public/icon-menu-white.svg"></IonImg>
+            {/* <IonImg src="../../public/icon-menu-white.svg"></IonImg> */}
+            <IonIcon icon={menu} color="light" size="large" />
           </IonMenuToggle>
         </IonItem>
       </nav>

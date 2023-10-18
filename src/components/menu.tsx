@@ -5,30 +5,66 @@ import {
   IonTitle,
   IonContent,
   IonMenuToggle,
-  IonButton,
   IonItem,
-  IonPage,
-  IonRadio,
-  IonRadioGroup,
-  RadioGroupCustomEvent,
+  IonIcon,
 } from "@ionic/react";
 import "./navbar.css";
-
+import {
+  calendar,
+  home,
+  informationCircle,
+  logoWebComponent,
+  people,
+} from "ionicons/icons";
 const Menu: React.FC = () => {
   return (
     <>
       <IonMenu contentId="main-content">
-        <IonHeader style={{ height: "6em" }} className="menu">
+        <IonHeader
+          style={{ height: "6em", display: "flex" }}
+          className="ion-align-items-center"
+        >
           <IonToolbar>
-            <IonTitle>Menu</IonTitle>
+            <IonItem lines="none">
+              <IonIcon icon={logoWebComponent}></IonIcon>
+              <IonTitle>Menu</IonTitle>
+            </IonItem>
           </IonToolbar>
         </IonHeader>
         <IonContent className="ion-padding">
           <IonMenuToggle>
-            <IonItem routerLink="/home">Home</IonItem>
-            <IonItem routerLink="/about">About</IonItem>
-            <IonItem routerLink="/members">Members</IonItem>
-            <IonItem routerLink="/events">Events</IonItem>
+            <IonItem routerLink="/home">
+              <IonIcon
+                icon={home}
+                size="medium"
+                className="ion-margin-end"
+              ></IonIcon>
+              Home
+            </IonItem>
+            <IonItem routerLink="/members">
+              <IonIcon
+                icon={people}
+                size="medium"
+                className="ion-margin-end"
+              ></IonIcon>
+              Members
+            </IonItem>
+            <IonItem routerLink="/events">
+              <IonIcon
+                icon={calendar}
+                size="medium"
+                className="ion-margin-end"
+              ></IonIcon>
+              Events
+            </IonItem>
+            <IonItem routerLink="/about">
+              <IonIcon
+                icon={informationCircle}
+                size="medium"
+                className="ion-margin-end"
+              ></IonIcon>
+              About
+            </IonItem>
           </IonMenuToggle>
         </IonContent>
       </IonMenu>

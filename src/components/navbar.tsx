@@ -1,4 +1,5 @@
-import { IonImg, IonItem } from "@ionic/react";
+import { IonItem, IonIcon } from "@ionic/react";
+import { logoWebComponent } from "ionicons/icons";
 import "./navbar.css";
 
 const NavBar: React.FC = () => {
@@ -6,7 +7,8 @@ const NavBar: React.FC = () => {
     <>
       <nav className="nav">
         <IonItem routerLink="/home">
-          <IonImg src="../../public/icon.svg" style={{ width: "3em" }}></IonImg>
+          {/* <IonImg src="../../public/icon.svg" style={{ width: "3em" }}></IonImg> */}
+          <IonIcon icon={logoWebComponent} color="light" size="large"></IonIcon>
         </IonItem>
         <ul className="nav">
           <li className="dropdown">
