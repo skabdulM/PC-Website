@@ -27,7 +27,9 @@ import {
   newspaper,
 } from "ionicons/icons";
 
+
 const Home: React.FC = () => {
+  
   return (
     <>
       <div className="menu">

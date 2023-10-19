@@ -1,0 +1,14 @@
+.box{
+    
+    height: 200px;
+    background-color: aquas;
+    width: 200px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: solid 3px black;
+    margin: 20px
+}

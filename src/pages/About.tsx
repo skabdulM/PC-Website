@@ -3,8 +3,15 @@ import NavBar from "../components/navbar";
 import Menu from "../components/menu";
 import Menu_Nav from "../components/menu-nav";
 import "./Home.css";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import './About.css'
 const About: React.FC = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:2000, delay:1000})
+  },[])
   return (
     <>
       <div className="menu">
@@ -22,7 +29,10 @@ const About: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
-          <div>this is About page</div>
+         
+          <div className="box">this is About page</div>
+          
+          
         </IonContent>
       </IonPage>
     </>
